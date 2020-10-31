@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/82dcfaf394.js" crossorigin="anonymous"></script>
+    <style>
+        #navbar {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        #navbar a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 12px;
+        }
+
+        #navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        #navbar a.active {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .content {
+            padding: 16px;
+        }
+
+        .sticky {
+            position: fixed;
+            z-index: 1;
+            opacity: 0.5;
+            top: 0;
+            width: 100%;
+        }
+
+        .sticky+.content {
+            padding-top: 60px;
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+    <!--   cover img-->
+    <header>
+       <div class="bgimg">
+        <div class="container text-center headerset">
+            <h1>Welcome to website</h1>
+            <h2>it provide everything you want</h2>
+            <div class="btnContainer">
+            <a href="#" class="btn btnCover" id="btn-r">Registration</a>
+            <a href="#" class="btn btnCover" id="btn-l">Login</a>
+            </div> 
+        </div>
+    </div>
+    </header>
+        
+        <!--    end cover img-->
+
+        <!--    navbar-->
+
+
+        <nav class="navbar navbar-inverse" id="navbar">
+            <div id="ddown" class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" id="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">WebSiteName</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav text-center">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#">information</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Help</a></li>
+                    </ul>
+
+                    <form class="navbar-form navbar-right" action="/action_page.php">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search" name="search">
+                            <div class="input-group-btn">
+                                <button class="btn btn-default" type="submit">
+                                   <i class="glyphicon glyphicon-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+    
+
+    <!--    end of navbat-->
+
+    <div class="content">
+
+        <!--   card code-->
+
+        <section class="text-center">
+            <div class="container-fluid">
+                <h1 id="sh" class="text-capitalize pt-5">Services</h1>
+                <hr class="mx-auto w-25">
+            </div>
+            <div class="container-fluid">
+                <div class="row mb-5 text-center p-3">
+                    <div class="col-lg-4 col-md-6 col-12 p-3">
+                        <div class="card" style="width:400px ; padding: 5px">
+                            <img class="card-img-top" src="images/i1.jpg" alt="Card image">
+                            <div class="card-body">
+                                <h4 class="card-title">John Doe</h4>
+                                <p class="card-text">Some example text.</p>
+                                <a href="#" class="btn btn-primary">See Profile</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 p-3">
+                        <div class="card" style="width:400px; padding: 5px ">
+                            <img class="card-img-top" src="images/i1.jpg" alt="Card image">
+                            <div class="card-body">
+                                <h4 class="card-title">John Doe</h4>
+                                <p class="card-text">Some example text.</p>
+                                <a href="#" class="btn btn-primary">See Profile</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 p-3">
+                        <div class="card" style="width:400px ; padding: 5px">
+                            <img class="card-img-top" src="images/i1.jpg" alt="Card image">
+                            <div class="card-body">
+                                <h4 class="card-title">John Doe</h4>
+                                <p class="card-text">Some example text.</p>
+                                <a href="#" class="btn btn-primary">See Profile</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!--    card code end-->
+
+
+        <!--        gallery start-->
+
+        <section class="text-center">
+            <div class="container-fluid">
+                <h1 class="text-capitalize pt-5">Gellery</h1>
+                <hr class="mx-auto w-25">
+
+                <div class="row mb-5">
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-5">
+                        <img src="images/i1.jpg" class="img-fluid">
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-5">
+                        <img src="images/i1.jpg" class="img-fluid">
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-5">
+                        <img src="images/i1.jpg" class="img-fluid">
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-5">
+                        <img src="images/i1.jpg" class="img-fluid">
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-5">
+                        <img src="images/i1.jpg" class="img-fluid">
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-5">
+                        <img src="images/i1.jpg" class="img-fluid">
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-5">
+                        <img src="images/i1.jpg" class="img-fluid">
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-5">
+                        <img src="images/i1.jpg" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!--       gallery end-->
+        
+
+
+
+
+    </div>
+
+   <!--  start of footer-->
+       
+       <footer id="footer">
+        <div class="container" id="container-footer">
+         <div class="footer-top">
+                   <div class="row">
+                       <div class="col-lg-3 col-md-3 col-sm-6 col-12 footer-info">
+                           <h3>Website Name</h3>
+                           <p>This website of travel agency which provide you how you can book hotel room, vehivkes or even a complete tour</p>
+                       </div>
+                       <div class="col-lg-2 col-md-2 col-sm-6 col-12 footer-links">
+                           <h4>Useful Links:</h4>
+                           <ul id="footer-ul">
+                               <li><i class="ion-ios-arrow-right"></i><a href="#" id="fl">Home</a></li>
+                               <li><i class="ion-ios-arrow-right"></i><a href="#">Services</a></li>
+                               <li><i class="ion-ios-arrow-right"></i><a href="#">Information</a></li>
+                               <li><i class="ion-ios-arrow-right"></i><a href="#">Gallery</a></li>
+                               <li><i class="ion-ios-arrow-right"></i><a href="#">Help</a></li>
+                           </ul>
+                       </div>
+                       <div class="col-lg-3 col-md-2 col-sm-6 col-12 footer-contact">
+                           <h4>Follows Us:</h4>
+                           <a href="#" class="twitter"><i class="fab fa-twitter footer-icon"></i></a>
+                           <a href="#" class="facebook"><i class="fab fa-facebook-f  footer-icon"></i></a>
+                           <a href="#" class="instagram"><i class="fab fa-instagram  footer-icon"></i></a>
+                           <a href="#" class="google-plus"><i class="fab fa-google-plus  footer-icon"></i></a>
+                           <a href="#" class="linkedin"><i class="fab fa-linkedin footer-icon"></i></a>
+                       </div>
+                       <div class="col-lg-4 col-md-5 col-sm-6 col-12 footer-newsletter">
+                           <h1>Our Newsletter</h1>
+                           <p>We have some newsletter</p>
+                           <form action="" method="post">
+                               <input id="email-sbs" type="email" name="email" placeholder="    Enter Email">
+                               <input id="btn-sbs" class="btn-warning" type="submit" value="Subscribe">
+                           </form>
+                       </div>
+                   </div>
+               </div>
+               <p class="copyright text-muted">Copyright &copy; Website Name 2019</p>
+           </div>
+       </footer>
+        
+<!--        end of footer-->
+
+
+</body>
+
+<!--javascript Block-->
+
+<script>
+    window.onscroll = function() {
+        myFunction()
+    };
+
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+
+    function myFunction() {
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+        } else {
+            navbar.classList.remove("sticky");
+        }
+    }
+
+</script>
+
+<!--javascript end block end-->
+
+</html>

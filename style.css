@@ -1,0 +1,123 @@
+ * {
+     margin: 0px;
+     padding: 0px;
+     box-sizing: border-box;
+     font-family: 'Fira Sans', sans-serif;
+ }
+
+ .bgimg {
+     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(nci/fp.jpg);
+     background-size: 100% 100%;
+     background-attachment: fixed;
+     height: 650px;
+ }
+
+ .headerset {
+     color: #fff;
+     padding-top: 200px;
+     box-sizing: border-box;
+ }
+
+ .headerset h1 {
+     font-size: 82px;
+     font-weight: bold;
+ }
+
+ .headerset h2 {
+     font-size: 42px;
+     font-weight: lighter;
+ }
+
+ .btnCover {
+     display: inline-block;
+     margin: 15px;
+     padding: 10px;
+     font-weight: lighter;
+     text-decoration: none;
+     text-transform: uppercase;
+     transition: background-color 0.2s, border 0.2s, color 0.2s;
+     width: 250px;
+ }
+
+ #btn-r {
+     background-color: transparent;
+     color: #5cb85c;
+     border: 1px solid #5cb85c;
+     border-radius: 150px;
+ }
+
+ #btn-r:hover {
+     background-color: #fff;
+     color: #5cb85c;
+
+ }
+
+ #btn-l {
+     background-color: transparent;
+     color: #fff;
+     border: 1px solid #fff;
+     border-radius: 150px;
+ }
+
+ #btn-l:hover {
+     background-color: #428bca;
+     color: #fff;
+     border: 1px solid #fff;
+ }
+
+ @media only screen and (max-width: 590px) {
+     .bgimg {
+         height: 700px;
+     }
+ }
+/*footer*/
+#footer{
+    background-color: #000;
+    color: #fff;
+}
+.footer-links ul li a{
+    color: #fff;
+}
+.footer-links ul li a:hover{
+    font-size: 150%;
+}
+.footer-contact a{
+    font-size: 150%;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 15px;
+    text-decoration: none;
+    padding: 5px;
+}
+.footer-contact a:hover{
+    font-size: 200%;
+    color: #bebaba;
+    border: 2px solid #bebaba;
+}
+.footer-contact a i{
+    margin-bottom: 15px;
+}
+#email-sbs{
+    width: 250px;
+    border-radius: 25px;
+    height: 35px;
+    color: darkorange;
+    padding: 5px;
+    border: 2px solid darkorange;
+    margin-bottom: 10px;
+}
+#btn-sbs{
+    background-color: darkorange;
+    color: #fff;
+    padding: 5px;
+    height: 35px;
+    width: 100px;
+    border-radius: 25px;
+    border: 2px solid #fff;
+    margin-left: 5px;
+}
+#btn-sbs:hover{
+    background-color: #fff;
+    color: darkorange;
+    border: 2px solid darkorange;
+}
